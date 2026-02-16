@@ -1,0 +1,4 @@
+package winform
+
+class TabPagerAdapter {
+}
