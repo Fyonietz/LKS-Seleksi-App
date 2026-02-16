@@ -1,12 +1,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="24dp"
+    android:gravity="center_vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:text="Welcome To Laundry App"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/etName"
         android:hint="Name"
+        android:layout_marginBottom="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -14,6 +27,7 @@
         android:id="@+id/etPassword"
         android:hint="Password"
         android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -23,9 +37,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:text="Go To Register"
+    <TextView
+        android:id="@+id/tvRegister"
+        android:text="Don't have an account? Register"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
 </LinearLayout>

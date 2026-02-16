@@ -19,7 +19,7 @@ class LoginFragment : Fragment() {
         val etName = view.findViewById<EditText>(R.id.etName)
         val etPassword = view.findViewById<EditText>(R.id.etPassword)
         val btnLogin = view.findViewById<Button>(R.id.btnLogin)
-        val btnRegister = view.findViewById<Button>(R.id.btnRegister)
+        val btnRegister = view.findViewById<TextView>(R.id.tvRegister)
 
         btnLogin.setOnClickListener {
             login(etName.text.toString(), etPassword.text.toString())
